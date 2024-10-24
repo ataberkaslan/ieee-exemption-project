@@ -1,11 +1,4 @@
-# Sample Solution for the Exemption Project
-
-The solution presented in this repository is to be used only as an example. The code quality and structure is NOT optimal but the 
-end product satisfies the project requirements. You can use the code here as a reference point or as a MVP example.  
-
-By the way, this is my actual solution to the task, which I've used to be exempt from the course 2 years ago. So, this is the first meaningful
-program that I've written in C :)
-
+# Solution for the IEEE Exemption Project
 ***
 
 A project introduction document has been shared in the course [Drive](https://drive.google.com/drive/folders/1bkdGh66wUN9iAxy9qGR9SsCGe29M1SYV?usp=sharing).  
@@ -21,4 +14,3 @@ But as a short intro:
 
 ***
 
-*Sample project here is compiled and tested with CMake using VS2022 on a 8th gen. Intel machine running Windows 10*
