@@ -3,7 +3,7 @@
 #define RAYGUI_IMPLEMENTATION
 #include "include/raygui.h"
 
-std::vector<std::unique_ptr<Circle>> Application::circles;
+LinkedList<std::shared_ptr<Circle>> Application::circles;
 
 int Application::Start() {
     InitWindow(WIDTH, HEIGHT, TITLE);
@@ -19,7 +19,7 @@ int Application::Start() {
 void Application::Draw() {
     BeginDrawing();
     ClearBackground(GRAY);
-    for(auto& circle : Application::circles)
+    for(std::shared_ptr<Circle>& circle : Application::circles)
     {
         DrawCircle(circle->centerX, circle->centerY, circle->radius, circle->color);
     }
@@ -27,5 +27,5 @@ void Application::Draw() {
 }
 
 void Application::AddCircle(Color color, float radius, int centerX, int centerY, float angularVelocity, float rodLength) {
-    Application::circles.push_back(std::make_unique<Circle>(color, radius, centerX, centerY, angularVelocity, rodLength));
+    Application::circles.append(std::make_shared<Circle>(color, radius, centerX, centerY, angularVelocity, rodLength));
 }
