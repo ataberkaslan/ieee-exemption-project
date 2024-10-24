@@ -33,7 +33,7 @@ void LinkedList<T>::append(T value) {
 // RemoveTail: Delete the last node (tail node) specifically
 template <typename T>
 void LinkedList<T>::remove() {
-    if (tail == nullptr) return; // If the list is empty, nothing to remove
+    if (tail == nullptr || head == tail) return; // If the list is empty, nothing to remove
 
     Node* temp = tail;
 
