@@ -12,6 +12,7 @@
 #include <memory>
 #include <vector>
 #include <iostream>
+#include <cstdlib>
 
 #include "include/raylib.h"
 #include "Circle.h"

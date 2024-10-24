@@ -11,9 +11,9 @@ int Application::Start() {
     // Head Node
     Application::AddCircle(BROWN, 20.f, 0, 0);
 
-    Application::AddCircle(BLUE, 15.f,5,50,PI);
-    Application::AddCircle(BLUE, 15.f, 10, 50, PI / 2);
-    Application::AddCircle(BLUE, 15.f, 15, 50, PI);
+    Application::AddCircle(BLUE, rand() % 70 + 5, rand() % 30, rand() % 100 + 25, PI);
+    Application::AddCircle(RED, rand() % 70 + 5, rand() % 30, rand() % 100 + 25, PI);
+    Application::AddCircle(GREEN, rand() % 70 + 5, rand() % 30, rand() % 100 + 25, PI);
 
     while (!WindowShouldClose()) {
         Application::Draw();
